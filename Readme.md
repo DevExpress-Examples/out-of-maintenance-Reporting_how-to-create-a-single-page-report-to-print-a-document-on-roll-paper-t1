@@ -1,3 +1,10 @@
+<!-- default file list -->
+*Files to look at*:
+
+* [Data.cs](./CS/SinglePageReport/Data.cs) (VB: [Data.vb](./VB/SinglePageReport/Data.vb))
+* [Form1.cs](./CS/SinglePageReport/Form1.cs) (VB: [Form1.vb](./VB/SinglePageReport/Form1.vb))
+* **[SinglePageHelper.cs](./CS/SinglePageReport/SinglePageHelper.cs) (VB: [SinglePageHelper.vb](./VB/SinglePageReport/SinglePageHelper.vb))**
+<!-- default file list end -->
 # How to create a single-page report to print a document on roll paper
 
 
