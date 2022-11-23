@@ -37,7 +37,7 @@ namespace SinglePageReport
 
             sumHeight = GraphicsUnitConverter.Convert(sumHeight, GraphicsUnit.Document, GraphicsUnit.Inch) * 100;
 
-            int totalPageHeight = pageSettings.Margins.Top + pageSettings.Margins.Bottom + Convert.ToInt32(sumHeight);
+            int totalPageHeight = Convert.ToInt32(pageSettings.Margins.Top + pageSettings.Margins.Bottom + sumHeight);
 
             XtraPageSettingsBase.ApplyPageSettings(pageSettings, PaperKind.Custom,
                 new Size(pageSettings.Bounds.Width, totalPageHeight),

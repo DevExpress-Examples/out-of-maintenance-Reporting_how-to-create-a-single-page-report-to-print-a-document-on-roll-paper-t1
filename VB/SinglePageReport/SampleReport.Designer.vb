@@ -152,7 +152,7 @@ Namespace SinglePageReport
 			' 
 			' xrLabel3
 			' 
-			Me.xrLabel3.Font = New System.Drawing.Font("Times New Roman", 32F)
+			Me.xrLabel3.Font = New DevExpress.Drawing.DXFont("Times New Roman", 32F)
 			Me.xrLabel3.LocationFloat = New DevExpress.Utils.PointFloat(0F, 0F)
 			Me.xrLabel3.Name = "xrLabel3"
 			Me.xrLabel3.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F)
@@ -171,7 +171,7 @@ Namespace SinglePageReport
 			' xrLabel4
 			' 
 			Me.xrLabel4.DataBindings.AddRange(New DevExpress.XtraReports.UI.XRBinding() { New DevExpress.XtraReports.UI.XRBinding("Text", Nothing, "Value")})
-			Me.xrLabel4.Font = New System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold)
+			Me.xrLabel4.Font = New DevExpress.Drawing.DXFont("Times New Roman", 9.75F, DevExpress.Drawing.DXFontStyle.Bold)
 			Me.xrLabel4.LocationFloat = New DevExpress.Utils.PointFloat(433.3333F, 0F)
 			Me.xrLabel4.Name = "xrLabel4"
 			Me.xrLabel4.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F)

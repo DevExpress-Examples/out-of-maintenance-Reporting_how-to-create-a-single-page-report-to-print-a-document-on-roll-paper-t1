@@ -36,7 +36,7 @@ Namespace SinglePageReport
 
 			sumHeight = GraphicsUnitConverter.Convert(sumHeight, GraphicsUnit.Document, GraphicsUnit.Inch) * 100
 
-			Dim totalPageHeight As Integer = pageSettings.Margins.Top + pageSettings.Margins.Bottom + Convert.ToInt32(sumHeight)
+			Dim totalPageHeight As Integer = Convert.ToInt32(pageSettings.Margins.Top + pageSettings.Margins.Bottom + sumHeight)
 
 			XtraPageSettingsBase.ApplyPageSettings(pageSettings, PaperKind.Custom, New Size(pageSettings.Bounds.Width, totalPageHeight), pageSettings.Margins, pageSettings.MinMargins, pageSettings.Landscape)
 		End Sub
