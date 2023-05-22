@@ -4,6 +4,7 @@ using System.Drawing;
 using System.Drawing.Printing;
 using System.Linq;
 using System.Text;
+using DevExpress.Drawing.Printing;
 using DevExpress.XtraPrinting;
 using DevExpress.XtraPrinting.Native;
 using DevExpress.XtraReports.UI;
@@ -20,7 +21,7 @@ namespace SinglePageReport
 
             XtraPageSettingsBase pageSettings = report.PrintingSystem.PageSettings;
 
-            XtraPageSettingsBase.ApplyPageSettings(pageSettings, PaperKind.Custom,
+            XtraPageSettingsBase.ApplyPageSettings(pageSettings, DXPaperKind.Custom,
                 new Size(pageSettings.Bounds.Width, pageSettings.Bounds.Height * report.Pages.Count),
                 pageSettings.Margins, pageSettings.MinMargins, pageSettings.Landscape);
 
@@ -39,7 +40,7 @@ namespace SinglePageReport
 
             int totalPageHeight = Convert.ToInt32(pageSettings.Margins.Top + pageSettings.Margins.Bottom + sumHeight);
 
-            XtraPageSettingsBase.ApplyPageSettings(pageSettings, PaperKind.Custom,
+            XtraPageSettingsBase.ApplyPageSettings(pageSettings, DXPaperKind.Custom,
                 new Size(pageSettings.Bounds.Width, totalPageHeight),
                 pageSettings.Margins, pageSettings.MinMargins, pageSettings.Landscape);
         }
